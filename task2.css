@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #1d1d1d, #343a40);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.stopwatch-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid #d4af37; /* Adding a golden border for a premium touch */
+}
+
+#time {
+    font-size: 4.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #fff;
+    background: linear-gradient(to right, #d4af37, #f7f7f7);
+    /* Vendor prefixes for compatibility */
+    -webkit-background-clip: text; 
+    /* For WebKit-based browsers */
+    background-clip: text; 
+    /* Standard property for modern browsers */
+    -webkit-text-fill-color: transparent; 
+    /* For WebKit-based browsers */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+#controls {
+    margin-bottom: 30px;
+}
+
+button {
+    font-size: 1.3em;
+    padding: 15px 35px;
+    margin: 5px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background: #d4af37; /* Using a golden color for buttons */
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background: #bfa15e; /* Slightly darker gold on hover */
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#laps {
+    margin-top: 30px;
+}
+
+#lap-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lap-list li {
+    margin: 12px 0;
+    font-size: 1.4em;
+    color: #ffffff; /* White text for clarity */
+    background: rgba(0, 0, 0, 0.7); /* Darker background for contrast */
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+}
+
+.lap-time {
+    font-weight: bold;
+    color: #d4af37; /* Gold color for lap times */
+}
+
+.lap-number {
+    font-weight: 300;
+    color: #e0e0e0; /* Lighter color for lap numbers */
+}
